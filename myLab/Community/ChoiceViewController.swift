@@ -8,6 +8,7 @@
 import UIKit
 
 class ChoiceViewController: UIViewController {
+    @IBOutlet private weak var subjectsCV: UICollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
