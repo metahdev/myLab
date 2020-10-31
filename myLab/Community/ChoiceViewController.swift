@@ -8,23 +8,37 @@
 import UIKit
 
 class ChoiceViewController: UIViewController {
+    // MARK:- Properties
     @IBOutlet private weak var subjectsCV: UICollectionView!
 
+    
+    // MARK:- View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        subjectsCV.delegate = self
+        subjectsCV.dataSource = self
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    // MARK:- Actions
+    @IBAction func close(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
-    */
+}
 
+extension ChoiceViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "reuseID", for: indexPath) as! ImageCollectionViewCell
+        cell.title = Content.subjects[indexPath.row]
+        cell.imageName = Content.subjectsImages[indexPath.row]
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "loading", sender: nil)
+    }
 }

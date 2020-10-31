@@ -16,8 +16,6 @@ class LearnViewController: UIViewController {
     @IBOutlet private weak var subjectsCV: UICollectionView!
     @IBOutlet private weak var learnedTV: UITableView!
     
-    private var subjects = ["Comp. Science", "Physics", "Chemistry", "Biology"]
-    private var subjectsImages = ["cs", "physics", "chemistry", "biology"]
     private var topics = ["Physics(extracurriculum): what is time?", "Biology: animal cell structure", "Chemistry: oxidation reaction", "Computer Science: types of network"]
     
     
@@ -53,8 +51,8 @@ extension LearnViewController: UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "reuseID", for: indexPath) as! ImageCollectionViewCell
-        cell.title = subjects[indexPath.row]
-        cell.imageName = subjectsImages[indexPath.row]
+        cell.title = Content.subjects[indexPath.row]
+        cell.imageName = Content.subjectsImages[indexPath.row]
         return cell
     }
 }
