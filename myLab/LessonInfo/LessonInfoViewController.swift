@@ -21,14 +21,12 @@ protocol LessonInfoViewControllerProtocol: class {
 class LessonInfoViewController: UIViewController, LessonInfoViewControllerProtocol {
     // MARK: - Properties
     var textViewContent: NSMutableAttributedString! = {
-        let mainText = "Momentum\nAll moving objects have momentum and momentum is a vector. Objects that are not moving have no momentum.\n\nThe word equation\nmomentum = mass x velocity\n\nThe symbol equation\np = m x v\n\nQuestion\nThe car has a mass of 100kg and is not moving. How much is the momentum of the car in kg m/s?\n\nReminder\n- Use the equation above to help you\n- You may move around with your finger to view the car"
-        let textToColor = "Momentum"
         let mutableAttribute = NSMutableAttributedString(string: "Momentum\nAll moving objects have momentum and momentum is a vector. Objects that are not moving have no momentum.\n\nThe word equation\nmomentum = mass x velocity\n\nThe symbol equation\np = m x v\n\nQuestion\nThe car has a mass of 100kg and is not moving. How much is the momentum of the car in kg m/s?\n\nReminder\n- Use the equation above to help you\n- You may move around with your finger to view the car", attributes: [NSAttributedString.Key.font: UIFont(name: "Optima Regular", size: 18)!])
-        mutableAttribute.addAttribute(NSAttributedString.Key.font, value: UIFont.boldSystemFont(ofSize: 20), range: NSRange(location: 0, length: 8))
-        mutableAttribute.addAttribute(NSAttributedString.Key.font, value: UIFont.boldSystemFont(ofSize: 18), range: NSRange(location: 115, length: 17))
-        mutableAttribute.addAttribute(NSAttributedString.Key.font, value: UIFont.boldSystemFont(ofSize: 18), range: NSRange(location: 161, length: 19))
+        mutableAttribute.addAttribute(NSAttributedString.Key.font, value: UIFont.boldSystemFont(ofSize: 22), range: NSRange(location: 0, length: 8))
+        mutableAttribute.addAttribute(NSAttributedString.Key.font, value: UIFont.boldSystemFont(ofSize: 20), range: NSRange(location: 115, length: 17))
+        mutableAttribute.addAttribute(NSAttributedString.Key.font, value: UIFont.boldSystemFont(ofSize: 20), range: NSRange(location: 161, length: 19))
         mutableAttribute.addAttribute(NSAttributedString.Key.font, value: UIFont.boldSystemFont(ofSize: 22), range: NSRange(location: 192, length: 8))
-        mutableAttribute.addAttribute(NSAttributedString.Key.font, value: UIFont.boldSystemFont(ofSize: 18), range: NSRange(location: 295, length: 9))
+        mutableAttribute.addAttribute(NSAttributedString.Key.font, value: UIFont.boldSystemFont(ofSize: 20), range: NSRange(location: 295, length: 9))
         return mutableAttribute
     }()
     var image: UIImage! = UIImage(named: "CarPhoto")
@@ -38,12 +36,6 @@ class LessonInfoViewController: UIViewController, LessonInfoViewControllerProtoc
         btn.setImage(UIImage(named: "next"), for: .normal)
         btn.addTarget(self, action: #selector(nextBtnTapped), for: .touchUpInside)
         return btn
-    }()
-    
-    private lazy var scrollView: UIScrollView = {
-        let sv = UIScrollView()
-        sv.contentSize = CGSize(width: view.frame.width, height: textView.frame.height + answerLabel.frame.height + 4)
-        return sv
     }()
     
     private lazy var textView: UITextView = {
@@ -58,7 +50,7 @@ class LessonInfoViewController: UIViewController, LessonInfoViewControllerProtoc
     
     private lazy var answerLabel: UILabel = {
         let lbl = UILabel()
-        lbl.font = UIFont(name: "Optima Regular", size: 18)
+        lbl.font = UIFont(name: "Optima Regular", size: 20)
         lbl.textColor = .black
         lbl.text = "momentum = "
         return lbl
@@ -122,7 +114,7 @@ class LessonInfoViewController: UIViewController, LessonInfoViewControllerProtoc
             nextBtn.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
             nextBtn.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10),
             nextBtn.widthAnchor.constraint(equalToConstant: 40),
-            nextBtn.heightAnchor.constraint(equalToConstant: 30),
+            nextBtn.heightAnchor.constraint(equalToConstant: 50),
             
             imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),

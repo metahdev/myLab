@@ -90,7 +90,7 @@ public class CarARViewController: UIViewController {
             nextBtn.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
             nextBtn.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10),
             nextBtn.widthAnchor.constraint(equalToConstant: 40),
-            nextBtn.heightAnchor.constraint(equalToConstant: 30),
+            nextBtn.heightAnchor.constraint(equalToConstant: 50),
             
             resultLabel.bottomAnchor.constraint(equalTo: nextBtn.topAnchor, constant: -10),
             resultLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
@@ -112,9 +112,9 @@ public class CarARViewController: UIViewController {
     // MARK: - Actions
     @objc func nextBtnTapped() {
         let mutableAttribute = NSMutableAttributedString(string: "Launching Rocket 🚀 with Momentum\n Do you know rockets have momentum too? Try to use the knowledge you have learnt in the previous pages, and answer the question below.\n\nQuestion\nThe rocket has a mass of 1000 kg and is moving at 5m/s. How much is the momentum of the rocket in kg m/s?\n\nReminder\n- Find a plane first.\n- Tap the screen once to place the rocket\n- Tap the screen twice to launch the rocket", attributes: [NSAttributedString.Key.font: UIFont(name: "Optima Regular", size: 18)!])
-        mutableAttribute.addAttribute(NSAttributedString.Key.font, value: UIFont.boldSystemFont(ofSize: 20), range: NSRange(location: 0, length: 33))
+        mutableAttribute.addAttribute(NSAttributedString.Key.font, value: UIFont.boldSystemFont(ofSize: 22), range: NSRange(location: 0, length: 33))
         mutableAttribute.addAttribute(NSAttributedString.Key.font, value: UIFont.boldSystemFont(ofSize: 22), range: NSRange(location: 170, length: 8))
-        mutableAttribute.addAttribute(NSAttributedString.Key.font, value: UIFont.boldSystemFont(ofSize: 18), range: NSRange(location: 286, length: 8))
+        mutableAttribute.addAttribute(NSAttributedString.Key.font, value: UIFont.boldSystemFont(ofSize: 20), range: NSRange(location: 286, length: 8))
         let controller = LessonInfoViewController()
         controller.modalPresentationStyle = .fullScreen
         controller.textViewContent = mutableAttribute

@@ -149,7 +149,7 @@ public class RocketARViewController: UIViewController, ARSCNViewDelegate, ARSess
             nextBtn.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
             nextBtn.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10),
             nextBtn.widthAnchor.constraint(equalToConstant: 40),
-            nextBtn.heightAnchor.constraint(equalToConstant: 30)
+            nextBtn.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
     
