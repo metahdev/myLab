@@ -40,6 +40,7 @@
 		D1EEE17C254DF9B500BB545A /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EEE17B254DF9B500BB545A /* ChoiceViewController.swift */; };
 		D1EEE181254DF9CD00BB545A /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EEE180254DF9CD00BB545A /* LoadingViewController.swift */; };
 		D1EEE186254DF9D900BB545A /* FightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EEE185254DF9D900BB545A /* FightViewController.swift */; };
+		D1EEE195254E217600BB545A /* TopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EEE194254E217600BB545A /* TopicsViewController.swift */; };
 		D2BF8387360190977A3FE444 /* Pods_myLab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1AE69934ABEBF190AD9286 /* Pods_myLab.framework */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +106,7 @@
 		D1EEE17B254DF9B500BB545A /* ChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
 		D1EEE180254DF9CD00BB545A /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		D1EEE185254DF9D900BB545A /* FightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightViewController.swift; sourceTree = "<group>"; };
+		D1EEE194254E217600BB545A /* TopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsViewController.swift; sourceTree = "<group>"; };
 		DAB1C8A61182F4BADCA2C685 /* Pods-myLabTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myLabTests.release.xcconfig"; path = "Target Support Files/Pods-myLabTests/Pods-myLabTests.release.xcconfig"; sourceTree = "<group>"; };
 		EE300F8FC5A1632AC4DA5117 /* Pods-myLab-myLabUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myLab-myLabUITests.release.xcconfig"; path = "Target Support Files/Pods-myLab-myLabUITests/Pods-myLab-myLabUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F5C53E9DD8E814128EE4F9FE /* Pods-myLab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myLab.debug.xcconfig"; path = "Target Support Files/Pods-myLab/Pods-myLab.debug.xcconfig"; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 				D1C5351B254B51A20036F3F4 /* LearnViewController.swift */,
 				D13D8B47254DA7A700D257C4 /* TopicViewController.swift */,
 				D1EEE15D254DB6A200BB545A /* QuizViewController.swift */,
+				D1EEE194254E217600BB545A /* TopicsViewController.swift */,
 			);
 			path = Learn;
 			sourceTree = "<group>";
@@ -598,6 +601,7 @@
 				D14BF33C254CBCA800D54E73 /* TitleTableViewCell.swift in Sources */,
 				D1EEE181254DF9CD00BB545A /* LoadingViewController.swift in Sources */,
 				D1C53534254B76F50036F3F4 /* Content.swift in Sources */,
+				D1EEE195254E217600BB545A /* TopicsViewController.swift in Sources */,
 				856D6208254E174E000DB36D /* SignInViewController.swift in Sources */,
 				D1BC6301254A0A6900F03052 /* SceneDelegate.swift in Sources */,
 				851DA2EA254DC77C0030B399 /* RocketARViewController.swift in Sources */,

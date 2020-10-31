@@ -21,4 +21,10 @@ class SignInViewController: UIViewController {
     private func setupSignInButton() {
         signInButton.layer.cornerRadius = 4
     }
+    
+    
+    // MARK:- Actions
+    @IBAction func close(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }

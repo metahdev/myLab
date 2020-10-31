@@ -25,6 +25,9 @@
                                 <rect key="frame" x="38" y="20" width="88" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="close:" destination="khw-QT-BWC" eventType="touchUpInside" id="CtY-en-wPn"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Have not registered yet?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="51d-2g-GT2">
                                 <rect key="frame" x="74" y="681" width="199" height="48"/>
@@ -632,10 +635,10 @@
             </objects>
             <point key="canvasLocation" x="1840.5797101449277" y="-285.26785714285711"/>
         </scene>
-        <!--View Controller-->
+        <!--Topics View Controller-->
         <scene sceneID="xKo-Wk-Adl">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="fol-iD-sjF" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="fol-iD-sjF" customClass="TopicsViewController" customModule="myLab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JL2-id-qLE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -651,6 +654,15 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sl1-Ra-MWk">
+                                        <rect key="frame" x="20" y="45" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="close:" destination="bal-Fa-q3h" eventType="touchUpInside" id="SaR-Y0-Was"/>
+                                            <action selector="close:" destination="fol-iD-sjF" eventType="touchUpInside" id="gqj-Bx-Phf"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.3921568627" green="0.42792166100000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
