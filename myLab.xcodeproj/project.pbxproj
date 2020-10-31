@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0F32572B0D161DCC647E05C4 /* Pods_myLabTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CFE95BF1327380136557B6 /* Pods_myLabTests.framework */; };
+		851DA2DE254DC72E0030B399 /* LessonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851DA2DD254DC72E0030B399 /* LessonInfoViewController.swift */; };
+		851DA2E4254DC7570030B399 /* CarARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851DA2E3254DC7570030B399 /* CarARViewController.swift */; };
+		851DA2EA254DC77C0030B399 /* RocketARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851DA2E9254DC77C0030B399 /* RocketARViewController.swift */; };
+		851DA2FD254DC9650030B399 /* RocketNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851DA2FB254DC9650030B399 /* RocketNode.swift */; };
+		851DA2FE254DC9650030B399 /* OverlayPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851DA2FC254DC9650030B399 /* OverlayPlane.swift */; };
+		851DA303254DC97C0030B399 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 851DA302254DC97C0030B399 /* art.scnassets */; };
 		BD7C718E62BEDFF63A7ADB10 /* Pods_myLab_myLabUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B4E40098D6B7371BCBF33A /* Pods_myLab_myLabUITests.framework */; };
 		D13D8B48254DA7A700D257C4 /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13D8B47254DA7A700D257C4 /* TopicViewController.swift */; };
 		D14BF334254CBC9200D54E73 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14BF333254CBC9200D54E73 /* ImageCollectionViewCell.swift */; };
@@ -59,6 +65,13 @@
 		430BA5C0B6381F204CCCC138 /* Pods-myLab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myLab.release.xcconfig"; path = "Target Support Files/Pods-myLab/Pods-myLab.release.xcconfig"; sourceTree = "<group>"; };
 		53CFE95BF1327380136557B6 /* Pods_myLabTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myLabTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6308B09C290F003C2AE41ADE /* Pods-myLab-myLabUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myLab-myLabUITests.debug.xcconfig"; path = "Target Support Files/Pods-myLab-myLabUITests/Pods-myLab-myLabUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		851DA2DD254DC72E0030B399 /* LessonInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonInfoViewController.swift; sourceTree = "<group>"; };
+		851DA2E3254DC7570030B399 /* CarARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarARViewController.swift; sourceTree = "<group>"; };
+		851DA2E9254DC77C0030B399 /* RocketARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RocketARViewController.swift; sourceTree = "<group>"; };
+		851DA2FB254DC9650030B399 /* RocketNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RocketNode.swift; sourceTree = "<group>"; };
+		851DA2FC254DC9650030B399 /* OverlayPlane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayPlane.swift; sourceTree = "<group>"; };
+		851DA302254DC97C0030B399 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		851DA307254DC9980030B399 /* RocketSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = RocketSound.mp3; sourceTree = "<group>"; };
 		9C1AE69934ABEBF190AD9286 /* Pods_myLab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myLab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D13D8B47254DA7A700D257C4 /* TopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
 		D14BF333254CBC9200D54E73 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -136,6 +149,40 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		851DA2DC254DC7150030B399 /* LessonInfo */ = {
+			isa = PBXGroup;
+			children = (
+				851DA2DD254DC72E0030B399 /* LessonInfoViewController.swift */,
+				851DA2FC254DC9650030B399 /* OverlayPlane.swift */,
+				851DA2FB254DC9650030B399 /* RocketNode.swift */,
+			);
+			path = LessonInfo;
+			sourceTree = "<group>";
+		};
+		851DA2E2254DC73E0030B399 /* CarAR */ = {
+			isa = PBXGroup;
+			children = (
+				851DA2E3254DC7570030B399 /* CarARViewController.swift */,
+			);
+			path = CarAR;
+			sourceTree = "<group>";
+		};
+		851DA2E8254DC7690030B399 /* RocketAR */ = {
+			isa = PBXGroup;
+			children = (
+				851DA2E9254DC77C0030B399 /* RocketARViewController.swift */,
+			);
+			path = RocketAR;
+			sourceTree = "<group>";
+		};
+		851DA308254DC99D0030B399 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				851DA307254DC9980030B399 /* RocketSound.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
 		D14BF332254CBC4200D54E73 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +225,9 @@
 				D1C53510254B51590036F3F4 /* Learn */,
 				D1C5352D254B51D20036F3F4 /* Community */,
 				D1C5352C254B51C90036F3F4 /* Profile */,
+				851DA2DC254DC7150030B399 /* LessonInfo */,
+				851DA2E2254DC73E0030B399 /* CarAR */,
+				851DA2E8254DC7690030B399 /* RocketAR */,
 				D14BF332254CBC4200D54E73 /* Cells */,
 				D1C53512254B516F0036F3F4 /* Storyboards */,
 				D1C53532254B76C10036F3F4 /* Services */,
@@ -264,6 +314,8 @@
 			isa = PBXGroup;
 			children = (
 				D1BC630A254A0A6D00F03052 /* Assets.xcassets */,
+				851DA302254DC97C0030B399 /* art.scnassets */,
+				851DA308254DC99D0030B399 /* Audio */,
 				D1BC6307254A0A6A00F03052 /* myLab.xcdatamodeld */,
 			);
 			path = Resources;
@@ -397,6 +449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1BC630E254A0A6D00F03052 /* LaunchScreen.storyboard in Resources */,
+				851DA303254DC97C0030B399 /* art.scnassets in Resources */,
 				D1BC630B254A0A6D00F03052 /* Assets.xcassets in Resources */,
 				D1BC6306254A0A6A00F03052 /* Main.storyboard in Resources */,
 			);
@@ -529,17 +582,22 @@
 				D1BC6303254A0A6900F03052 /* EntryViewController.swift in Sources */,
 				D1EEE15E254DB6A200BB545A /* QuizViewController.swift in Sources */,
 				D1BC62FF254A0A6900F03052 /* AppDelegate.swift in Sources */,
+				851DA2FD254DC9650030B399 /* RocketNode.swift in Sources */,
 				D1C53514254B51950036F3F4 /* ProfileViewController.swift in Sources */,
 				D14BF33C254CBCA800D54E73 /* TitleTableViewCell.swift in Sources */,
 				D1EEE181254DF9CD00BB545A /* LoadingViewController.swift in Sources */,
 				D1C53534254B76F50036F3F4 /* Content.swift in Sources */,
 				D1BC6301254A0A6900F03052 /* SceneDelegate.swift in Sources */,
+				851DA2EA254DC77C0030B399 /* RocketARViewController.swift in Sources */,
+				851DA2E4254DC7570030B399 /* CarARViewController.swift in Sources */,
 				D1BC6309254A0A6A00F03052 /* myLab.xcdatamodeld in Sources */,
 				D13D8B48254DA7A700D257C4 /* TopicViewController.swift in Sources */,
 				D1EEE186254DF9D900BB545A /* FightViewController.swift in Sources */,
 				D14BF334254CBC9200D54E73 /* ImageCollectionViewCell.swift in Sources */,
 				D1C5351C254B51A20036F3F4 /* LearnViewController.swift in Sources */,
+				851DA2FE254DC9650030B399 /* OverlayPlane.swift in Sources */,
 				D14BF341254CCED400D54E73 /* QuestionTableViewCell.swift in Sources */,
+				851DA2DE254DC72E0030B399 /* LessonInfoViewController.swift in Sources */,
 				D1C53521254B51AE0036F3F4 /* CommunityViewController.swift in Sources */,
 				D1EEE172254DBC8400BB545A /* AnswerTableViewCell.swift in Sources */,
 				D1EEE177254DF03600BB545A /* QuestionViewController.swift in Sources */,
@@ -722,13 +780,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UCRS3R4AUU;
+				DEVELOPMENT_TEAM = XCJQAJBY89;
 				INFOPLIST_FILE = myLab/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.devMetah.myLab;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kcfadflakls.myLab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -742,13 +800,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UCRS3R4AUU;
+				DEVELOPMENT_TEAM = XCJQAJBY89;
 				INFOPLIST_FILE = myLab/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.devMetah.myLab;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kcfadflakls.myLab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
