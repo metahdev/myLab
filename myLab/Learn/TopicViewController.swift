@@ -37,7 +37,9 @@ class TopicViewController: UIViewController {
     
     // MARK:- Actions
     @IBAction func showAR(_ sender: Any) {
-        
+        let controller = LessonInfoViewController()
+        controller.modalPresentationStyle = .fullScreen
+        present(controller, animated: true, completion: nil)
     }
     
     @IBAction func continueToQuiz(_ sender: Any) {
