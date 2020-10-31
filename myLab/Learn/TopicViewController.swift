@@ -27,8 +27,8 @@ class TopicViewController: UIViewController {
         continueBtn.layer.cornerRadius = 5
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         DispatchQueue.main.async {
             self.videoView.load(withVideoId: "XFhntPxow0U")
         }
@@ -45,6 +45,6 @@ class TopicViewController: UIViewController {
     }
     
     @IBAction func close(_ sender: Any) {
-        
+        dismiss(animated: true, completion: nil)
     }
 }

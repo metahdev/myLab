@@ -429,23 +429,23 @@
                                 <color key="textColor" red="0.3921568627" green="0.42792166100000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kmt" translatesAutoresizingMaskIntoConstraints="NO" id="b6T-UD-9Ir">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="momentum" translatesAutoresizingMaskIntoConstraints="NO" id="b6T-UD-9Ir">
                                 <rect key="frame" x="22" y="383" width="221" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Molecular Physics, chapter 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9d-dK-gV0">
-                                <rect key="frame" x="22" y="531" width="225" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mechanics, chapter 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9d-dK-gV0">
+                                <rect key="frame" x="22" y="531" width="221" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Kinetic Molecular Theory: basic principles. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qd-sz-8zJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Introduction to Momentum" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qd-sz-8zJ">
                                 <rect key="frame" x="257" y="383" width="159" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -519,7 +519,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="study" id="epD-As-97V"/>
                     <connections>
+                        <outlet property="currentTopicIV" destination="b6T-UD-9Ir" id="oQE-DB-XRq"/>
+                        <outlet property="currentTopicLbl" destination="D9d-dK-gV0" id="5oo-ux-n9P"/>
+                        <outlet property="currentTopicTitleLbl" destination="9qd-sz-8zJ" id="yiK-Gx-4wW"/>
                         <outlet property="learnedTV" destination="cDG-rp-Y1e" id="Kyb-KS-JGH"/>
+                        <outlet property="progressView" destination="cOD-xS-zju" id="lbC-dK-8et"/>
                         <outlet property="subjectsCV" destination="PLx-hX-oYe" id="Ljn-FI-yb3"/>
                         <segue destination="bal-Fa-q3h" kind="show" identifier="continue" id="MPQ-us-gGM"/>
                     </connections>
@@ -751,9 +755,8 @@ Momentum = mass • velocity</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MqE-gk-gci">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MqE-gk-gci">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvn-HU-cXE">
                                         <rect key="frame" x="20" y="45" width="40" height="40"/>
@@ -772,44 +775,53 @@ Momentum = mass • velocity</string>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.3921568627" green="0.42792166100000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="kXd-vH-Isn"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2d-Jq-Jrn">
-                                <rect key="frame" x="20" y="137" width="298" height="39"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZgO-cq-gvS">
+                                <rect key="frame" x="20" y="184" width="374" height="360"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
-                                <state key="normal" title="What is fomula of momentum?">
-                                    <color key="titleColor" red="0.3921568627" green="0.42792166100000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="fight:" destination="AoB-xa-LZy" eventType="touchUpInside" id="HOa-xd-Eqa"/>
-                                </connections>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZgO-cq-gvS">
-                                <rect key="frame" x="20" y="184" width="374" height="314"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.4392156862745098" green="0.50196078431372548" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseID" rowHeight="91" id="aLH-VM-o5V">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="91"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseID" rowHeight="79" id="aLH-VM-o5V" customClass="AnswerTableViewCell" customModule="myLab" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="79"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aLH-VM-o5V" id="1Gp-wT-EGZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="91"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="p = m • V" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="He3-ia-7HI">
-                                                    <rect key="frame" x="65" y="11" width="309" height="69"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="He3-ia-7HI">
+                                                    <rect key="frame" x="58" y="10" width="316" height="59"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="316" id="BPD-BD-LUL"/>
+                                                        <constraint firstAttribute="height" constant="70" id="K8J-n1-KLP"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRv-oo-NI0">
-                                                    <rect key="frame" x="20" y="30" width="30" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRv-oo-NI0">
+                                                    <rect key="frame" x="20" y="24.5" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="QVU-BM-fkg"/>
+                                                        <constraint firstAttribute="width" constant="30" id="rql-1n-6fM"/>
+                                                    </constraints>
                                                 </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="He3-ia-7HI" secondAttribute="bottom" constant="10" id="JBr-bp-0dB"/>
+                                                <constraint firstItem="He3-ia-7HI" firstAttribute="top" secondItem="1Gp-wT-EGZ" secondAttribute="top" constant="10" id="csg-nu-ahi"/>
+                                                <constraint firstItem="cRv-oo-NI0" firstAttribute="leading" secondItem="1Gp-wT-EGZ" secondAttribute="leadingMargin" id="mCM-qG-kXh"/>
+                                                <constraint firstItem="cRv-oo-NI0" firstAttribute="centerY" secondItem="He3-ia-7HI" secondAttribute="centerY" id="oHH-Bs-Zyz"/>
+                                                <constraint firstAttribute="trailing" secondItem="He3-ia-7HI" secondAttribute="trailing" id="peF-xV-4ZK"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="dotButton" destination="cRv-oo-NI0" id="MEb-sR-AJD"/>
+                                            <outlet property="titleLabel" destination="He3-ia-7HI" id="2dY-Js-nFG"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -825,8 +837,17 @@ Momentum = mass • velocity</string>
                                     <action selector="continueQuiz:" destination="yfC-Ss-FhA" eventType="touchUpInside" id="tzD-2u-SYZ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is formula of momentum? " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MML-jE-vZ5">
+                                <rect key="frame" x="20" y="116" width="386" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="xHh-1r-bDe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <color key="textColor" red="0.3921568627" green="0.42792166100000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" defersCurrentPageDisplay="YES" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="TJd-9Q-OcU">
-                                <rect key="frame" x="137" y="523" width="141" height="37"/>
+                                <rect key="frame" x="137" y="552" width="141" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" red="0.35294117650000001" green="0.31372549020000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -834,17 +855,26 @@ Momentum = mass • velocity</string>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6oO-5T-LzY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MML-jE-vZ5" firstAttribute="top" secondItem="MqE-gk-gci" secondAttribute="bottom" constant="12" id="Ija-DL-YVQ"/>
+                            <constraint firstItem="MqE-gk-gci" firstAttribute="top" secondItem="gHB-go-k4t" secondAttribute="top" id="Pkb-l6-zBR"/>
+                            <constraint firstItem="MqE-gk-gci" firstAttribute="trailing" secondItem="6oO-5T-LzY" secondAttribute="trailing" id="c3r-Kr-CaI"/>
+                            <constraint firstItem="MqE-gk-gci" firstAttribute="leading" secondItem="6oO-5T-LzY" secondAttribute="leading" id="iy9-rk-VLT"/>
+                            <constraint firstItem="6oO-5T-LzY" firstAttribute="trailing" secondItem="MML-jE-vZ5" secondAttribute="trailing" constant="8" id="pkl-T5-4jm"/>
+                            <constraint firstItem="MML-jE-vZ5" firstAttribute="leading" secondItem="6oO-5T-LzY" secondAttribute="leading" constant="20" id="umX-pm-Qe5"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0JE-MW-bNC"/>
                     <connections>
                         <outlet property="continueBtn" destination="Jf1-9c-3ib" id="Vrm-zE-M3e"/>
                         <outlet property="pageControl" destination="TJd-9Q-OcU" id="eb0-FN-eLF"/>
+                        <outlet property="questionLbl" destination="MML-jE-vZ5" id="YO7-cK-drc"/>
                         <outlet property="tableView" destination="ZgO-cq-gvS" id="lRy-Uy-by4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ib-Me-BeX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3516" y="-585"/>
+            <point key="canvasLocation" x="3515.9420289855075" y="-585.26785714285711"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="QV0-ef-ukd">
@@ -1518,9 +1548,9 @@ Momentum = mass • velocity</string>
         <image name="edit" width="37.5" height="37.5"/>
         <image name="explanation" width="251.5" height="160"/>
         <image name="icon" width="343" height="343"/>
-        <image name="kmt" width="640" height="360"/>
         <image name="logo" width="1250" height="500"/>
         <image name="mark" width="84.5" height="84.5"/>
+        <image name="momentum" width="372" height="194.5"/>
         <image name="profile" width="37.5" height="37.5"/>
         <image name="settings" width="37.5" height="37.5"/>
         <image name="share" width="37.5" height="37.5"/>

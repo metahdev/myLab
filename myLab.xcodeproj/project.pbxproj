@@ -28,6 +28,7 @@
 		D1C53534254B76F50036F3F4 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C53533254B76F50036F3F4 /* Content.swift */; };
 		D1C53539254B77040036F3F4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C53538254B77040036F3F4 /* Constants.swift */; };
 		D1EEE15E254DB6A200BB545A /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EEE15D254DB6A200BB545A /* QuizViewController.swift */; };
+		D1EEE172254DBC8400BB545A /* AnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EEE171254DBC8400BB545A /* AnswerTableViewCell.swift */; };
 		D2BF8387360190977A3FE444 /* Pods_myLab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1AE69934ABEBF190AD9286 /* Pods_myLab.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		D1C53533254B76F50036F3F4 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		D1C53538254B77040036F3F4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D1EEE15D254DB6A200BB545A /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		D1EEE171254DBC8400BB545A /* AnswerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTableViewCell.swift; sourceTree = "<group>"; };
 		DAB1C8A61182F4BADCA2C685 /* Pods-myLabTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myLabTests.release.xcconfig"; path = "Target Support Files/Pods-myLabTests/Pods-myLabTests.release.xcconfig"; sourceTree = "<group>"; };
 		EE300F8FC5A1632AC4DA5117 /* Pods-myLab-myLabUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myLab-myLabUITests.release.xcconfig"; path = "Target Support Files/Pods-myLab-myLabUITests/Pods-myLab-myLabUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F5C53E9DD8E814128EE4F9FE /* Pods-myLab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myLab.debug.xcconfig"; path = "Target Support Files/Pods-myLab/Pods-myLab.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				D14BF333254CBC9200D54E73 /* ImageCollectionViewCell.swift */,
 				D14BF33B254CBCA800D54E73 /* TitleTableViewCell.swift */,
 				D14BF340254CCED400D54E73 /* QuestionTableViewCell.swift */,
+				D1EEE171254DBC8400BB545A /* AnswerTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 				D1C5351C254B51A20036F3F4 /* LearnViewController.swift in Sources */,
 				D14BF341254CCED400D54E73 /* QuestionTableViewCell.swift in Sources */,
 				D1C53521254B51AE0036F3F4 /* CommunityViewController.swift in Sources */,
+				D1EEE172254DBC8400BB545A /* AnswerTableViewCell.swift in Sources */,
 				D1C53539254B77040036F3F4 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
