@@ -12,6 +12,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet private weak var interestsCV: UICollectionView!
     @IBOutlet private weak var questionsTV: UITableView!
     @IBOutlet private weak var commentsTV: UITableView!
+    @IBOutlet private weak var imageView: UIImageView!
     private var interests = ["Comp. Science", "Physics"]
     private var interestsImages = ["cs", "physics"]
     private var questions = ["Can anyone explain to me what is Ohm's law?", "Cambridge Exam Preparation Tips?"]
@@ -29,6 +30,8 @@ class ProfileViewController: UIViewController {
         questionsTV.dataSource = self
         commentsTV.delegate = self
         commentsTV.dataSource = self
+        imageView.layer.borderColor = UIColor.white.cgColor
+        imageView.layer.borderWidth = 2
     }
 }
 
