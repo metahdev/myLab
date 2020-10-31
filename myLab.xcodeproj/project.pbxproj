@@ -29,6 +29,10 @@
 		D1C53539254B77040036F3F4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C53538254B77040036F3F4 /* Constants.swift */; };
 		D1EEE15E254DB6A200BB545A /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EEE15D254DB6A200BB545A /* QuizViewController.swift */; };
 		D1EEE172254DBC8400BB545A /* AnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EEE171254DBC8400BB545A /* AnswerTableViewCell.swift */; };
+		D1EEE177254DF03600BB545A /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EEE176254DF03600BB545A /* QuestionViewController.swift */; };
+		D1EEE17C254DF9B500BB545A /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EEE17B254DF9B500BB545A /* ChoiceViewController.swift */; };
+		D1EEE181254DF9CD00BB545A /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EEE180254DF9CD00BB545A /* LoadingViewController.swift */; };
+		D1EEE186254DF9D900BB545A /* FightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EEE185254DF9D900BB545A /* FightViewController.swift */; };
 		D2BF8387360190977A3FE444 /* Pods_myLab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1AE69934ABEBF190AD9286 /* Pods_myLab.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +86,10 @@
 		D1C53538254B77040036F3F4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D1EEE15D254DB6A200BB545A /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		D1EEE171254DBC8400BB545A /* AnswerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTableViewCell.swift; sourceTree = "<group>"; };
+		D1EEE176254DF03600BB545A /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		D1EEE17B254DF9B500BB545A /* ChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
+		D1EEE180254DF9CD00BB545A /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		D1EEE185254DF9D900BB545A /* FightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightViewController.swift; sourceTree = "<group>"; };
 		DAB1C8A61182F4BADCA2C685 /* Pods-myLabTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myLabTests.release.xcconfig"; path = "Target Support Files/Pods-myLabTests/Pods-myLabTests.release.xcconfig"; sourceTree = "<group>"; };
 		EE300F8FC5A1632AC4DA5117 /* Pods-myLab-myLabUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myLab-myLabUITests.release.xcconfig"; path = "Target Support Files/Pods-myLab-myLabUITests/Pods-myLab-myLabUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F5C53E9DD8E814128EE4F9FE /* Pods-myLab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myLab.debug.xcconfig"; path = "Target Support Files/Pods-myLab/Pods-myLab.debug.xcconfig"; sourceTree = "<group>"; };
@@ -244,6 +252,10 @@
 			isa = PBXGroup;
 			children = (
 				D1C53520254B51AE0036F3F4 /* CommunityViewController.swift */,
+				D1EEE176254DF03600BB545A /* QuestionViewController.swift */,
+				D1EEE17B254DF9B500BB545A /* ChoiceViewController.swift */,
+				D1EEE180254DF9CD00BB545A /* LoadingViewController.swift */,
+				D1EEE185254DF9D900BB545A /* FightViewController.swift */,
 			);
 			path = Community;
 			sourceTree = "<group>";
@@ -519,16 +531,20 @@
 				D1BC62FF254A0A6900F03052 /* AppDelegate.swift in Sources */,
 				D1C53514254B51950036F3F4 /* ProfileViewController.swift in Sources */,
 				D14BF33C254CBCA800D54E73 /* TitleTableViewCell.swift in Sources */,
+				D1EEE181254DF9CD00BB545A /* LoadingViewController.swift in Sources */,
 				D1C53534254B76F50036F3F4 /* Content.swift in Sources */,
 				D1BC6301254A0A6900F03052 /* SceneDelegate.swift in Sources */,
 				D1BC6309254A0A6A00F03052 /* myLab.xcdatamodeld in Sources */,
 				D13D8B48254DA7A700D257C4 /* TopicViewController.swift in Sources */,
+				D1EEE186254DF9D900BB545A /* FightViewController.swift in Sources */,
 				D14BF334254CBC9200D54E73 /* ImageCollectionViewCell.swift in Sources */,
 				D1C5351C254B51A20036F3F4 /* LearnViewController.swift in Sources */,
 				D14BF341254CCED400D54E73 /* QuestionTableViewCell.swift in Sources */,
 				D1C53521254B51AE0036F3F4 /* CommunityViewController.swift in Sources */,
 				D1EEE172254DBC8400BB545A /* AnswerTableViewCell.swift in Sources */,
+				D1EEE177254DF03600BB545A /* QuestionViewController.swift in Sources */,
 				D1C53539254B77040036F3F4 /* Constants.swift in Sources */,
+				D1EEE17C254DF9B500BB545A /* ChoiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

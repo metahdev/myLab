@@ -50,7 +50,7 @@ class QuizViewController: UIViewController {
                 Content.currentTopicImage = "impulse"
                 Content.currentTopic = "Mechanics, chapter 6"
                 Content.progress = 0.6
-                self.presentingViewController?.presentingViewController?.dismiss(animated: false, completion: nil)
+                showEndingAlert()
                 return
             }
             currentQuestion += 1
@@ -64,8 +64,20 @@ class QuizViewController: UIViewController {
     }
     
     private func showErrorAlert() {
-        let alert = UIAlertController(title: "Wrong!", message: "Sorry, it looks like your answer is wrong", preferredStyle: .alert)
-        let action = UIAlertAction(title: "Try Again", style: .cancel, handler: nil)
+        showAlert(title: "Wrong!", message: "Sorry, it looks like your answer is wrong", actionTitle: "Try Again", completion: {})
+    }
+    
+    private func showEndingAlert() {
+        showAlert(title: "Congratulations!", message: "You have passed the 5th topic of Physics Mechanics: 'Introduction to Momentum'.", actionTitle: "OK", completion: {
+            self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+        })
+    }
+    
+    private func showAlert(title: String, message: String, actionTitle: String, completion: @escaping () -> Void) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: actionTitle, style: .cancel, handler: { _ in
+            completion()
+        })
         alert.addAction(action)
         self.present(alert, animated: true, completion: nil)
     }
