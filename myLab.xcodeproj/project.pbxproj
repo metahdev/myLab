@@ -14,6 +14,7 @@
 		851DA2FD254DC9650030B399 /* RocketNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851DA2FB254DC9650030B399 /* RocketNode.swift */; };
 		851DA2FE254DC9650030B399 /* OverlayPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851DA2FC254DC9650030B399 /* OverlayPlane.swift */; };
 		851DA303254DC97C0030B399 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 851DA302254DC97C0030B399 /* art.scnassets */; };
+		856D6208254E174E000DB36D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856D6207254E174E000DB36D /* SignInViewController.swift */; };
 		BD7C718E62BEDFF63A7ADB10 /* Pods_myLab_myLabUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B4E40098D6B7371BCBF33A /* Pods_myLab_myLabUITests.framework */; };
 		D13D8B48254DA7A700D257C4 /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13D8B47254DA7A700D257C4 /* TopicViewController.swift */; };
 		D14BF334254CBC9200D54E73 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14BF333254CBC9200D54E73 /* ImageCollectionViewCell.swift */; };
@@ -72,6 +73,7 @@
 		851DA2FC254DC9650030B399 /* OverlayPlane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayPlane.swift; sourceTree = "<group>"; };
 		851DA302254DC97C0030B399 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		851DA307254DC9980030B399 /* RocketSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = RocketSound.mp3; sourceTree = "<group>"; };
+		856D6207254E174E000DB36D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		9C1AE69934ABEBF190AD9286 /* Pods_myLab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myLab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D13D8B47254DA7A700D257C4 /* TopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
 		D14BF333254CBC9200D54E73 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -183,6 +185,14 @@
 			path = Audio;
 			sourceTree = "<group>";
 		};
+		856D6203254E1723000DB36D /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				856D6207254E174E000DB36D /* SignInViewController.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
 		D14BF332254CBC4200D54E73 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +231,7 @@
 			children = (
 				D1BC630F254A0A6D00F03052 /* Info.plist */,
 				D1C53511254B51670036F3F4 /* App */,
+				856D6203254E1723000DB36D /* SignIn */,
 				D1C53525254B51B80036F3F4 /* Entry */,
 				D1C53510254B51590036F3F4 /* Learn */,
 				D1C5352D254B51D20036F3F4 /* Community */,
@@ -587,6 +598,7 @@
 				D14BF33C254CBCA800D54E73 /* TitleTableViewCell.swift in Sources */,
 				D1EEE181254DF9CD00BB545A /* LoadingViewController.swift in Sources */,
 				D1C53534254B76F50036F3F4 /* Content.swift in Sources */,
+				856D6208254E174E000DB36D /* SignInViewController.swift in Sources */,
 				D1BC6301254A0A6900F03052 /* SceneDelegate.swift in Sources */,
 				851DA2EA254DC77C0030B399 /* RocketARViewController.swift in Sources */,
 				851DA2E4254DC7570030B399 /* CarARViewController.swift in Sources */,
