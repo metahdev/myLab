@@ -9,8 +9,13 @@ import UIKit
 
 class LearnViewController: UIViewController {
     // MARK:- Properties
+    @IBOutlet weak var currentTopicTitleLbl: UILabel!
+    @IBOutlet weak var currentTopicLbl: UILabel!
+    @IBOutlet weak var currentTopicIV: UIImageView!
+    @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet private weak var subjectsCV: UICollectionView!
     @IBOutlet private weak var learnedTV: UITableView!
+    
     private var subjects = ["Comp. Science", "Physics", "Chemistry", "Biology"]
     private var subjectsImages = ["cs", "physics", "chemistry", "biology"]
     private var topics = ["Physics(extracurriculum): what is time?", "Biology: animal cell structure", "Chemistry: oxidation reaction", "Computer Science: types of network"]
@@ -23,6 +28,14 @@ class LearnViewController: UIViewController {
         subjectsCV.dataSource = self
         learnedTV.delegate = self
         learnedTV.dataSource = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        currentTopicTitleLbl.text = Content.currentTopicTitle
+        currentTopicIV.image = UIImage(named: Content.currentTopicImage)
+        currentTopicLbl.text = Content.currentTopic
+        progressView.progress = Content.progress
     }
     
     
