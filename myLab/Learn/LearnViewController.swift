@@ -55,6 +55,10 @@ extension LearnViewController: UICollectionViewDelegate, UICollectionViewDataSou
         cell.imageName = Content.subjectsImages[indexPath.row]
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "topics", sender: nil)
+    }
 }
 
 
