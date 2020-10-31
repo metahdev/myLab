@@ -24,6 +24,12 @@ class LearnViewController: UIViewController {
         learnedTV.delegate = self
         learnedTV.dataSource = self
     }
+    
+    
+    // MARK:- Actions
+    @IBAction func showTopic() {
+        performSegue(withIdentifier: "continue", sender: nil)
+    }
 }
 
 

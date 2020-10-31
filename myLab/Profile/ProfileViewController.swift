@@ -31,6 +31,7 @@ class ProfileViewController: UIViewController {
         commentsTV.delegate = self
         commentsTV.dataSource = self
         imageView.layer.borderColor = UIColor.white.cgColor
+        imageView.layer.cornerRadius = imageView.frame.height * 0.5
         imageView.layer.borderWidth = 2
     }
 }
