@@ -10,8 +10,8 @@ import UIKit
 class CommunityViewController: UIViewController {
     // MARK:- Properties
     @IBOutlet weak var tableView: UITableView!
-    private var titles = ["Could a parallel universe where other parallel universes do not exist, exist?", "What is the simplest way to describe Molecular-Kinetic theory?"]
-    private var details = ["Hey everyone! Recently I've been thinking about a fun paradox: if there is an infinite count of universes, could it be possible that in one of them, others do not exist?", "Hi there! My youngest brother asked what am I currenly learning at my Physics class. What is the simplest way of describing Molecular-Kinetic theory?"]
+    private var titles = ["Could a parallel universe where other parallel universes do not exist, exist?", "What is the simplest way to describe the Molecular-Kinetic theory?"]
+    private var details = ["Hey everyone! Recently I've been thinking about a fun paradox: if there is an enormous count of universes, could it be possible that in one of them, others do not exist?", "Hi there! My youngest brother asked what am I currently learning in my Physics class. What is the simplest way of describing the Molecular-Kinetic theory?"]
     private var points = ["2", "3"]
     private var authors = ["by: baubekZh", "by: sangikkk"]
     private var dates = ["31/10/20 20:38 PM", "31/10/20 20:02 PM"]

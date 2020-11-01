@@ -16,9 +16,9 @@ class ProfileViewController: UIViewController {
     private var interests = ["Comp. Science", "Physics"]
     private var interestsImages = ["cs", "physics"]
     private var questions = ["Can anyone explain to me what is Ohm's law?", "Cambridge Exam Preparation Tips?"]
-    private var questionsPoints = ["5 points", "57 points"]
+    private var questionsPoints = ["1 point", "3 points"]
     private var comments = ["Swift is way faster than Python, smh", "I think that Physics is more interesting, than..."]
-    private var commentsPoints = ["3 points", "1 point"]
+    private var commentsPoints = ["1 points", "2 point"]
     
     
     // MARK:- View Lifecycle
